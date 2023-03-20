@@ -15,6 +15,7 @@ sudo apt install ros-humble-ros-base
 sudo apt install ros-dev-tools
 sudo apt install libudev-dev
 sudo apt install libc6:armhf
+sudo apt install neovim
 sudo apt install ros-${rosDistro}-cartographer
 sudo apt install ros-${rosDistro}-cartographer-ros
 sudo apt install ros-${rosDistro}-navigation2
