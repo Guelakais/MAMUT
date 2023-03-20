@@ -11,6 +11,7 @@ declare -a lines=(
     "export _colcon_cd_root=/opt/ros/humble/"
     "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash"
     "export LDS_MODEL=LDS-01"
+    "export TURTLEBOT3_MODEL=burger"
     "export OPENCR_PORT=/dev/ttyACM0"
     "export OPENCR_MODEL=burger"
     "export MAKEFLAGS=\"-j1\""
