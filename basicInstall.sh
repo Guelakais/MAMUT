@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt remove --purge libreoffice* thunderbird update-manager update-manager-core update-notifier* rhythmbox gamemode* aisleriot cups* gnome-mines gnome-calculator gnome-calendar
+sudo apt remove --auto-remove --purge libreoffice* thunderbird update-manager update-manager-core update-notifier* rhythmbox gamemode* aisleriot cups* gnome-mines gnome-calculator gnome-calendar brltty-x11 xbrlapi python3-brlapi
 rosDistro="humble"
 sudo apt update
 sudo apt upgrade
