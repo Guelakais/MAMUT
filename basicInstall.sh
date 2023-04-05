@@ -8,6 +8,7 @@ rosDistro="humble"
 sudo apt update
 sudo apt upgrade
 sudo apt full-upgrade
+sudo apt install openssh-server
 sudo apt install locales
 sudo locale-gen en_US en_US.UTF-8
 sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
