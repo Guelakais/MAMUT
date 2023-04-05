@@ -5,6 +5,7 @@ gnome-mines gnome-calculator gnome-calendar gnome-todo gnome-keyring gnome-keyri
 gnome-bluetooth gnome-bluetooth-3-common gnome-bluetooth-common gnome-sudoku brltty-x11 \
 xbrlapi python3-brlapi
 rosDistro="humble"
+sudo dpkg --add-architecture armhf
 sudo apt update
 sudo apt upgrade
 sudo apt full-upgrade
@@ -34,4 +35,3 @@ sudo apt install ros-${rosDistro}-nav2-bringup
 sudo apt install ros-${rosDistro}-dynamixel-sdk
 sudo apt install ros-${rosDistro}-turtlebot3-msgs
 sudo apt install ros-${rosDistro}-turtlebot3
-sudo dpkg --add-architecture armhf
