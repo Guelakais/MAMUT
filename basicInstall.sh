@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo apt remove --auto-remove --purge libreoffice* thunderbird update-manager \
-update-manager-core update-notifier* rhythmbox gamemode* aisleriot cups* \
-gnome-mines gnome-calculator gnome-calendar gnome-todo gnome-keyring gnome-keyring-pkcs11 \
-gnome-bluetooth gnome-bluetooth-3-common gnome-bluetooth-common gnome-sudoku brltty-x11 \
+update-manager-core rhythmbox gamemode* aisleriot cups* \
+gnome-mines gnome-calculator gnome-calendar gnome-todo \
+ gnome-sudoku brltty-x11 \
 xbrlapi python3-brlapi
 rosDistro="humble"
 sudo dpkg --add-architecture armhf
