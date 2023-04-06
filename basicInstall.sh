@@ -6,15 +6,14 @@ gnome-mines gnome-calculator gnome-calendar gnome-todo \
 xbrlapi python3-brlapi
 rosDistro="humble"
 sudo dpkg --add-architecture armhf
+sudo add-apt-repository universe
 sudo apt update
 sudo apt upgrade
 sudo apt full-upgrade
-sudo apt install openssh-server
-sudo apt install locales
+sudo apt install openssh-server locales
 sudo locale-gen en_US en_US.UTF-8
 sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 sudo apt install software-properties-common
-sudo add-apt-repository universe
 sudo apt install curl
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o \
 /usr/share/keyrings/ros-archive-keyring.gpg
@@ -22,16 +21,14 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 sudo apt update
 sudo apt upgrade
 sudo apt full-upgrade
-sudo apt install ros-${rosDistro}-ros-base
-sudo apt install ros-dev-tools
-sudo apt install libudev-dev
-sudo apt install libc6:armhf
-sudo apt install neovim
-sudo apt install ros-${rosDistro}-hardware-inteface
-sudo apt install ros-${rosDistro}-cartographer
-sudo apt install ros-${rosDistro}-cartographer-ros
-sudo apt install ros-${rosDistro}-navigation2
-sudo apt install ros-${rosDistro}-nav2-bringup
-sudo apt install ros-${rosDistro}-dynamixel-sdk
-sudo apt install ros-${rosDistro}-turtlebot3-msgs
-sudo apt install ros-${rosDistro}-turtlebot3
+sudo apt install libudev-dev libc6:armhf neovim \
+ros-${rosDistro}-ros-base \
+ros-dev-tools \
+ros-${rosDistro}-hardware-inteface \
+ros-${rosDistro}-cartographer \
+ros-${rosDistro}-cartographer-ros \
+ros-${rosDistro}-navigation2 \
+ros-${rosDistro}-nav2-bringup \
+ros-${rosDistro}-dynamixel-sdk \
+ros-${rosDistro}-turtlebot3-msgs \
+ros-${rosDistro}-turtlebot3
