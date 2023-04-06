@@ -1,9 +1,11 @@
 #!/bin/bash
 
 BASHRC_FILE="$HOME/.bashrc"
-
 # Define an array of lines to add to the .bashrc file
 declare -a lines=(
+    "alias rPIColcon='colcon build --executor sequential --parallel-workers 1 --cmake-clean-first --symlink-install --continue-on-error --cmake-skip-unavailable'"
+    "alias turtlebot3Bringup='ros2 launch turtlebot3_bringup robot.launch.py'"
+    "alias teleop='ros2 run turtlebot3_teleop teleop_keyboard'"
     "source /opt/ros/humble/setup.bash"
     "export ROS_DOMAIN_ID=30"
     ". \"$HOME/.cargo/env\""
